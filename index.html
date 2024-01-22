@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey's</title>
+    <!-- fontawesome cdn links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- googles fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <!-- Tailwind and DaisyUI cdn links -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
@@ -24,11 +33,174 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- header section -->
-    <header class=""></header>
-    <!-- main section -->
+    <!---------------------------------------------
+                    header section 
+    ------------------------------------------------->
+    <header class="container px-3 md:px-0 lg:px-0 relative lg:w-[80%] mx-auto">
+      <!--############### navigation bar ###############-->
+      <div class="navbar pl-0 h-32 flex items-center justify-center">
+        <div class="navbar-start">
+          <!-- responsive -->
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost pl-0 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li
+                class="hover:bg-[#FF4240] focus:bg-[#FF4240] hover:text-white"
+              >
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:bg-[#FF4240] focus:bg-[#FF4240] hover:text-white"
+              >
+                <a>About</a>
+              </li>
+              <li
+                class="hover:bg-[#FF4240] focus:bg-[#FF4240] hover:text-white"
+              >
+                <a>Pages</a>
+              </li>
+              <li
+                class="hover:bg-[#FF4240] focus:bg-[#FF4240] hover:text-white"
+              >
+                <a>Blog</a>
+              </li>
+              <li
+                class="hover:bg-[#FF4240] focus:bg-[#FF4240] hover:text-white"
+              >
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- desktop screen -->
+          <a class="lg:text-4xl md:text-3xl text-2xl font-extrabold"
+            ><span>Hockey</span><span class="text-red-600">'</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="amar-menu menu menu-horizontal px-1 font-semibold text-lg">
+            <li class="hover:text-[#FF4240]">
+              <a class="hover:bg-transparent focus:bg-transparent">Home</a>
+            </li>
+            <li class="hover:text-[#FF4240]"><a>About</a></li>
+            <li class="hover:text-[#FF4240]"><a>Pages</a></li>
+            <li class="hover:text-[#FF4240]"><a>Blog</a></li>
+            <li class="hover:text-[#FF4240]"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-6">
+          <a class="text-xl text-gray-500 hidden lg:flex md:flex"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a
+            class="btn bg-[#FF4240] hover:bg-[#FF4240] btn-md lg:btn-lg lg:px-6 md:px-6 text-md lg:text-lg text-white"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+
+      <!--############### Banner Section ###############-->
+      <section class="banner-section my-4">
+        <div
+          class="carousel lg:h-[500px] md:h-[400px] sm:h-[300px] h-[250px] w-full relative rounded-lg"
+        >
+          <!-- slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full object-cover" />
+            <div
+              class="absolute flex lg:left-8 lg:bottom-8 md:bottom-8 bottom-4 left-1/2 translate-x-[-50%] lg:translate-x-0 gap-5"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle lg:btn-md md:btn-md btn-sm lg:text-2xl md:text-lg text-sm p-0 text-white border-none hover:bg-slate-800 bg-slate-900"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle lg:btn-md md:btn-md btn-sm lg:text-2xl md:text-lg text-sm p-0 text-white border-none hover:bg-slate-800 bg-slate-900"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/banner.jpg" class="w-full object-cover" />
+            <div
+              class="absolute flex lg:left-8 lg:bottom-8 md:bottom-8 bottom-4 left-1/2 translate-x-[-50%] lg:translate-x-0 gap-5"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle lg:btn-md md:btn-md btn-sm lg:text-2xl md:text-lg text-sm p-0 text-white border-none hover:bg-slate-800 bg-slate-900"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle lg:btn-md md:btn-md btn-sm lg:text-2xl md:text-lg text-sm p-0 text-white border-none hover:bg-slate-800 bg-slate-900"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/banner1.jpg" class="w-full object-cover" />
+            <div
+              class="absolute flex lg:left-8 lg:bottom-8 md:bottom-8 bottom-4 left-1/2 translate-x-[-50%] lg:translate-x-0 gap-5"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle lg:btn-md md:btn-md btn-sm lg:text-2xl md:text-lg text-sm p-0 text-white border-none hover:bg-slate-800 bg-slate-900"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle lg:btn-md md:btn-md btn-sm lg:text-2xl md:text-lg text-sm p-0 text-white border-none hover:bg-slate-800 bg-slate-900"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- banner text box -->
+        <div
+          class="banner-textbox lg:w-[580px] px-6 py-8 mt-3 lg:absolute lg:right-8 lg:bottom-8 rounded-2xl space-y-4 text-white bg-[#131318]"
+        >
+          <h3 class="lg:text-2xl md:text-xl text-md font-extrabold">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-gray-500">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </section>
+    </header>
+    <!---------------------------------------------
+                    Main section 
+    ------------------------------------------------->
     <main></main>
-    <!-- footer section -->
+    <!---------------------------------------------
+                    footer section 
+    ------------------------------------------------->
     <footer></footer>
   </body>
 </html>
