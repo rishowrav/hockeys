@@ -787,86 +787,93 @@
               </div>
             </div>
             <!-- right form & use grid -->
-            <div
-              class="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-1 lg:w-[60%] w-full"
-            >
-              <!-- name -->
+            <form class="pt-1 lg:w-[60%] w-full" action="#">
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                <!-- name -->
 
-              <div class="flex flex-col gap-2">
-                <label class="font-extrabold md:text-xl text-md" for="name"
-                  >Your Name</label
-                >
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Enter your full name"
-                  class="input md:text-md text-sm w-full md:py-7 bg-[rgba(19,19,24,0.03)] font-extralight"
-                />
+                <div class="flex flex-col gap-2">
+                  <label class="font-extrabold md:text-xl text-md" for="name"
+                    >Your Name</label
+                  >
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your full name"
+                    class="input md:text-md text-sm w-full md:py-7 bg-[rgba(19,19,24,0.03)] font-extralight"
+                  />
+                </div>
+
+                <!-- Email -->
+
+                <div class="flex flex-col gap-2">
+                  <label class="font-extrabold md:text-xl text-md" for="name"
+                    >Your Email</label
+                  >
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your email"
+                    class="input bg-[rgba(19,19,24,0.03)] font-extralight md:text-md text-sm w-full md:py-7"
+                  />
+                </div>
+
+                <!-- Subject -->
+
+                <div class="flex flex-col gap-2">
+                  <label class="font-extrabold md:text-xl text-md" for="name"
+                    >Subject</label
+                  >
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your subject"
+                    class="input bg-[rgba(19,19,24,0.03)] font-extralight md:text-md text-sm w-full md:py-7"
+                  />
+                </div>
+
+                <!-- Phone Number -->
+
+                <div class="flex flex-col gap-2">
+                  <label class="font-extrabold md:text-xl text-md" for="name"
+                    >Phone Number</label
+                  >
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your phone number"
+                    class="input bg-[rgba(19,19,24,0.03)] font-extralight md:text-md text-sm w-full md:py-7"
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="lg:col-span-2 flex flex-col gap-2">
+                  <label class="font-extrabold md:text-xl text-md" for="msg"
+                    >Message</label
+                  >
+                  <textarea
+                    rows="15"
+                    id="meg"
+                    class="textarea bg-[rgba(19,19,24,0.03)] font-extralight text-sm w-full hidden lg:flex"
+                    placeholder="Write your message"
+                  ></textarea>
+                  <textarea
+                    rows="8"
+                    id="meg"
+                    class="textarea bg-[rgba(19,19,24,0.03)] font-extralight text-sm w-full lg:hidden"
+                    placeholder="Write your message"
+                  ></textarea>
+                </div>
+
+                <!-- button -->
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                  <button
+                    class="btn md:btn-lg btn-md bg-[#FF4240] focus:bg-[#FF4240] text-white border-none md:text-lg text-md w-full"
+                  >
+                    Send Message
+                  </button>
+                </div>
               </div>
-
-              <!-- Email -->
-
-              <div class="flex flex-col gap-2">
-                <label class="font-extrabold md:text-xl text-md" for="name"
-                  >Your Email</label
-                >
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Enter your email"
-                  class="input bg-[rgba(19,19,24,0.03)] font-extralight md:text-md text-sm w-full md:py-7"
-                />
-              </div>
-
-              <!-- Subject -->
-
-              <div class="flex flex-col gap-2">
-                <label class="font-extrabold md:text-xl text-md" for="name"
-                  >Subject</label
-                >
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Enter your subject"
-                  class="input bg-[rgba(19,19,24,0.03)] font-extralight md:text-md text-sm w-full md:py-7"
-                />
-              </div>
-
-              <!-- Phone Number -->
-
-              <div class="flex flex-col gap-2">
-                <label class="font-extrabold md:text-xl text-md" for="name"
-                  >Phone Number</label
-                >
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Enter your phone number"
-                  class="input bg-[rgba(19,19,24,0.03)] font-extralight md:text-md text-sm w-full md:py-7"
-                />
-              </div>
-
-              <!-- Message -->
-              <div class="lg:col-span-2 flex flex-col gap-2">
-                <label class="font-extrabold md:text-xl text-md" for="msg"
-                  >Message</label
-                >
-                <textarea
-                  rows="15"
-                  id="meg"
-                  class="textarea bg-[rgba(19,19,24,0.03)] font-extralight text-sm w-full"
-                  placeholder="Write your message"
-                ></textarea>
-              </div>
-              <!-- button -->
-              <div class="lg:col-span-2 flex flex-col gap-4">
-                <button
-                  class="btn md:btn-lg btn-md bg-[#FF4240] focus:bg-[#FF4240] text-white border-none md:text-lg text-md w-full"
-                >
-                  Send Message
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
           <!-- Social Media -->
           <div
@@ -894,8 +901,70 @@
     <!---------------------------------------------
                     footer section 
     ------------------------------------------------->
-    <footer class="container px-3 md:px-0 lg:px-0 lg:w-[1100px] mx-auto mb-24">
-      <div></div>
+    <footer class="py-24 px-3 bg-[#131318] text-[rgba(255,255,255,0.60)]">
+      <div class="flex lg:flex-row flex-col container lg:w-[1100px] mx-auto">
+        <aside
+          class="lg:w-[40%] w-full space-y-4 lg:text-start text-center mb-12"
+        >
+          <h3 class="md:text-2xl text-xl font-extrabold text-white">
+            Get In Touch
+          </h3>
+          <p class="md:w-[80%] mx-auto lg:mx-0 w-full">
+            Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+            dolor. Purus urna in sit nullam proin.
+          </p>
+          <ul
+            class="space-y-1 flex flex-col items-center lg:items-start lg:justify-start justify-center"
+          >
+            <li class="flex items-center gap-2">
+              <i class="fa-regular fa-envelope text-red-600 text-xl"></i>
+              <span class="text-[rgba(255,255,255,0.80)]"
+                >hockeys123@gmail.com</span
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-red-600 text-xl"></i>
+              <span class="text-[rgba(255,255,255,0.80)]"
+                >(+62) 123-321-543</span
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <div
+          class="lg:w-[60%] w-full grid gap-10 grid-cols-4 lg:grid-cols-3 text-center lg:text-start"
+        >
+          <nav class="col-span-2 lg:col-span-1">
+            <header class="text-white font-extrabold mb-6">Company</header>
+            <div class="flex flex-col gap-3">
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Leadership</a>
+              <a class="link link-hover">Careers</a>
+              <a class="link link-hover">News & Article</a>
+              <a class="link link-hover">Legal Notice </a>
+            </div>
+          </nav>
+          <nav class="col-span-2 lg:col-span-1">
+            <header class="text-white font-extrabold mb-6">Support</header>
+            <div class="flex flex-col gap-3">
+              <a class="link link-hover">Help Center</a>
+              <a class="link link-hover">FAQ</a>
+              <a class="link link-hover">Ticket Support</a>
+              <a class="link link-hover">Contact Us </a>
+            </div>
+          </nav>
+          <nav class="col-start-2 col-span-2 lg:col-span-1">
+            <header class="text-white font-extrabold mb-6">Services</header>
+            <div class="flex flex-col gap-3">
+              <a class="link link-hover">Academy</a>
+              <a class="link link-hover">Group Lesson</a>
+              <a class="link link-hover">Private Lesson</a>
+              <a class="link link-hover">Hockeys for kids</a>
+              <a class="link link-hover">Hockeys for Adult</a>
+            </div>
+          </nav>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
